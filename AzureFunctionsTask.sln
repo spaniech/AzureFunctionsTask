@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34616.47
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProcessQueueMessageFunction", "ProcessQueueMessageFunction\ProcessQueueMessageFunction.csproj", "{1CFC6F0A-0F5A-4911-A847-075EC0D52D35}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProcessQueueMessageFunction", "ProcessQueueMessageFunction\ProcessQueueMessageFunction.csproj", "{1CFC6F0A-0F5A-4911-A847-075EC0D52D35}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListBlobsFunction", "ListBlobsFunction\ListBlobsFunction.csproj", "{10C587D0-CE05-4540-9E9C-C27D2FD7CDD9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ListBlobsFunction", "ListBlobsFunction\ListBlobsFunction.csproj", "{10C587D0-CE05-4540-9E9C-C27D2FD7CDD9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{A3DD830F-35C5-4B0B-8AF7-C6B409C17765}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{A3DD830F-35C5-4B0B-8AF7-C6B409C17765}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

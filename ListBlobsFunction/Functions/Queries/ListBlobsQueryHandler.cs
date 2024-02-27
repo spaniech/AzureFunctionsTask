@@ -3,6 +3,8 @@ using MediatR;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 
+namespace ListBlobsFunction;
+
 internal class ListBlobsQueryHandler(
     ILogger<ListBlobsQueryHandler> logger,
     BlobServiceClient blobServiceClient,

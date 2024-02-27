@@ -4,6 +4,8 @@ using MediatR;
 using Microsoft.Azure.Functions.Worker;
 using Microsoft.Extensions.Logging;
 
+namespace ProcessQueueMessageFunction;
+
 public class ProcessQueueMessage(ILogger<ProcessQueueMessage> logger, IMediator mediator)
 {
     private readonly ILogger<ProcessQueueMessage> _logger = logger;

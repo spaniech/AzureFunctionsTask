@@ -4,6 +4,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 
+namespace ProcessQueueMessageFunction;
+
 internal class ProcessQueueMessageCommandHandler(
     ILogger<ProcessQueueMessageCommandHandler> logger,
     BlobServiceClient blobServiceClient,

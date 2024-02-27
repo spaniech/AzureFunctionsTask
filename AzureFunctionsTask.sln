@@ -7,8 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProcessQueueMessageFunction
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ListBlobsFunction", "ListBlobsFunction\ListBlobsFunction.csproj", "{10C587D0-CE05-4540-9E9C-C27D2FD7CDD9}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{A3DD830F-35C5-4B0B-8AF7-C6B409C17765}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,10 +21,6 @@ Global
 		{10C587D0-CE05-4540-9E9C-C27D2FD7CDD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{10C587D0-CE05-4540-9E9C-C27D2FD7CDD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{10C587D0-CE05-4540-9E9C-C27D2FD7CDD9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A3DD830F-35C5-4B0B-8AF7-C6B409C17765}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A3DD830F-35C5-4B0B-8AF7-C6B409C17765}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A3DD830F-35C5-4B0B-8AF7-C6B409C17765}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A3DD830F-35C5-4B0B-8AF7-C6B409C17765}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

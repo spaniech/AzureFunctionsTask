@@ -4,25 +4,22 @@ using MediatR;
 using Microsoft.Azure.Functions.Worker;
 using Microsoft.Extensions.Logging;
 
-namespace ProcessQueueMessageFunction
+public class ProcessQueueMessage(ILogger<ProcessQueueMessage> logger, IMediator mediator)
 {
-    public class ProcessQueueMessage(ILogger<ProcessQueueMessage> logger, IMediator mediator)
+    private readonly ILogger<ProcessQueueMessage> _logger = logger;
+    private readonly IMediator _mediator = mediator;
+
+    [Function(nameof(ProcessQueueMessage))]
+    public async Task Run(
+        [QueueTrigger("%QueueName%", Connection = "AzureWebJobsStorage")] QueueMessage message)
     {
-        private readonly ILogger<ProcessQueueMessage> _logger = logger;
-        private readonly IMediator _mediator = mediator;
+        _logger.LogInformation($"Queue trigger function processed: {message.MessageText}");
 
-        [Function(nameof(ProcessQueueMessage))]
-        public async Task Run(
-            [QueueTrigger("%QueueName%", Connection = "AzureWebJobsStorage")] QueueMessage message)
+        ProcessQueueMessageCommand command = new()
         {
-            _logger.LogInformation($"Queue trigger function processed: {message.MessageText}");
-
-            ProcessQueueMessageCommand command = new()
-            {
-                Body = message.Body,
-                MessageId = message.MessageId
-            };
-            await _mediator.Send(command);
-        }
+            Body = message.Body,
+            MessageId = message.MessageId
+        };
+        await _mediator.Send(command);
     }
 }

@@ -21,7 +21,7 @@ internal class ProcessQueueMessageCommandHandler(
         var req = request ?? throw new ArgumentNullException(nameof(request));
         var body = req.Body ?? throw new ArgumentNullException(nameof(req.Body));
 
-        //ChechIsJson(body.ToString());
+        ChechIsJson(body.ToString());
 
         var container = await GetContainerClientAsync(cancellationToken);
 

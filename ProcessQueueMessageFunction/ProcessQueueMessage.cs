@@ -3,7 +3,6 @@ using Azure.Storage.Queues.Models;
 using MediatR;
 using Microsoft.Azure.Functions.Worker;
 using Microsoft.Extensions.Logging;
-using ProcessQueueMessageFunction.Functions.Commands;
 
 namespace ProcessQueueMessageFunction
 {
